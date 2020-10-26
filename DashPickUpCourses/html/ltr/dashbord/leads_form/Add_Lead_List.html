@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+    <title>Add Lead Form</title>
+    <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../app-assets/images/logo/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/css/components.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/vendors/css/cryptocoins/cryptocoins.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="../../../../app-assets/css/pages/app-contacts.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light bg-danger navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="../index.html"><img class="brand-logo" alt="modern admin logo" src="../../../../app-assets/images/logo/logo.png">
+                            <h3 class="brand-text">PickUpCourses</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+
+
+                        <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+                            <div class="search-input">
+                                <input class="input" type="text" placeholder="Explore Modern..." tabindex="0" data-search="template-list">
+                                <div class="search-input-close"><i class="ft-x"></i></div>
+                                <ul class="search-list"></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+
+
+
+                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">Bahaa Admin</span><span class="avatar avatar-online"><img src="../../../../app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="Account_Setting.html"><i class="ft-user"></i> Edit Profile</a>
+
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+
+                <li class=" navigation-header"><span>Admin Panels</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Admin Panels"></i>
+                </li>
+                <li class=" nav-item"><a href="../../dashbord/index.html" target="_blank"><i class="la la-home"></i><span class="menu-title" data-i18n="eCommerce">dashboard</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-comments"></i><span class="menu-title" data-i18n="Project">Leads</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="./leads_form/Booking_Form_List.html"><i></i><span data-i18n="Project Summary">Booking Form</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-tasks.html"><i></i><span data-i18n="Project Task">Help Button</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Work With Us Form</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Our Partner Form</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Contact Us Form</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Feedback Form</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Articles Form</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">FAQ Form</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="../hospital-menu-template" target="_blank"><i class="la la-file-text"></i><span class="menu-title" data-i18n="Hospital">Aricles</span></a>
+                </li>
+                <li class=" nav-item"><a href="../crypto-menu-template" target="_blank"><i class="la la-briefcase"></i><span class="menu-title" data-i18n="Crypto">Packages</span></a>
+                </li>
+                <li class=" nav-item"><a href="../support-menu-template" target="_blank"><i class="la la-money"></i><span class="menu-title" data-i18n="Support Ticket">Promotion</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="la la-gear"></i><span class="menu-title" data-i18n="Project">Site Settings</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="project-summary.html"><i></i><span data-i18n="Project Summary">Pages</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-tasks.html"><i></i><span data-i18n="Project Task">Services</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Main Page</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Footer</span></a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a href="#"><i class="la la-sliders"></i><span class="menu-title" data-i18n="Project">Core Settings</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="project-summary.html"><i></i><span data-i18n="Project Summary">General Settings</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-tasks.html"><i></i><span data-i18n="Project Task">Site Languages</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Currency</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Visa</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">Contries</span></a>
+                        </li>
+                        <li><a class="menu-item" href="project-bugs.html"><i></i><span data-i18n="Project Bugs">City</span></a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a href="#"><i class="la la-user"></i><span class="menu-title" data-i18n="Users">Users</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="page-users-list.html"><i></i><span data-i18n="Users List">Users List</span></a>
+                        </li>
+                        <li><a class="menu-item" href="page-users-view.html"><i></i><span data-i18n="Users View">Users View</span></a>
+                        </li>
+                        <li><a class="menu-item" href="page-users-edit.html"><i></i><span data-i18n="Users Edit">Users Edit</span></a>
+                        </li>
+                        <li><a class="menu-item" href="user-profile.html"><i></i><span data-i18n="Users Profile">Users Profile</span></a>
+                        </li>
+                        <li><a class="menu-item" href="user-cards.html"><i></i><span data-i18n="Users Cards">Users Cards</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2">
+                    <h3 class="content-header-title">Add Lead Form List
+                    </h3>
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">Add Lead Form List
+
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-header-right col-md-6 col-12">
+                    <div class="media width-250 float-right">
+                        <media-left class="media-middle">
+                            <div id="sp-bar-total-sales"></div>
+                        </media-left>
+                        <div class="media-body media-right text-right">
+                            <h3 class="m-0">10</h3><span class="text-muted">Total Leads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <section id="pagination">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Add Leads</h4>
+                                    <div class="heading-elements">
+                                        <button class="btn btn-md round btn-outline-success pull-right"> <a href="Add_lead.html">Add New Lead</a></button>
+                                    </div>
+                                </div>
+                                <section class="row all-contacts">
+                                    <div class="col-12">
+
+                                        <div class="card-content">
+                                            <div class="card-body">
+                                                <!-- Task List table -->
+
+                                                <div class="table-responsive">
+                                                    <table id="users-contacts" class="table table-white-space table-bordered row-grouping display no-wrap icheck table-middle text-center">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmallall">
+                                                                        <label class="custom-control-label" for="checkboxsmallall"></label>
+                                                                    </div>
+                                                                </th>
+                                                                <th>Name</th>
+                                                                <th>Phone</th>
+                                                                <th>Nationality</th>
+                                                                <th>Date</th>
+
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="Add_lead.html" class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="Add_lead.html" class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="Add_lead.html" class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="Add_lead.html" class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkboxsmall1">
+                                                                        <label class="custom-control-label" for="checkboxsmall1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+                                                                    <a class="media-heading name">Alice Collins</a>
+
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <a class="email" href="">+658-254-256</a>
+                                                                </td>
+                                                                <td class="phone">KSA</td>
+                                                                <td class="text-center">
+                                                                    22/22/2222
+                                                                </td>
+
+                                                                <td>
+                                                                    <a class="primary edit mr-1"><i class="la la-pencil"></i></a>
+                                                                    <a class="danger  mr-1"><i class="la la-trash-o"></i></a>
+                                                                    <a href="Add_Lead_Single.html" class="success  mr-1"><i class="la la-eye"></i></a>
+
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>Name</th>
+                                                                <th>Email</th>
+                                                                <th>Phone</th>
+                                                                <th>Date</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                            </section>
+
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- Candlestick Multi Level Control Chart -->
+
+    <!-- Slaes & Purchase Order -->
+
+
+
+
+
+
+    <!--/ Trade History & Place Order -->
+
+
+
+
+    <!-- BEGIN: Footer-->
+
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../../app-assets/vendors/js/extensions/jquery.raty.js"></script>
+    <script src="../../../../app-assets/vendors/js/tables/jquery.dataTables.min.js"></script>
+    <script src="../../../../app-assets/vendors/js/charts/chart.min.js"></script>
+    <script src="../../../../app-assets/vendors/js/charts/apexcharts/apexcharts.min.js"></script>
+    <script src="../../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../../../app-assets/js/scripts/pages/dashboard-crypto.js"></script>
+
+    <script src="../../../../app-assets/js/scripts/pages/app-contacts.js"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>
